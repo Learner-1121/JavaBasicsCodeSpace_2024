@@ -21,6 +21,7 @@ public class GeneratingAndBuildingStreams
         alphabets.forEach(System.out::print);
         System.out.println();
 
+        // follows builder design pattern to generate streams
         Stream.Builder<String> builder = Stream.builder();
         builder.add("yamini");
         builder.add("sai");
@@ -28,5 +29,7 @@ public class GeneratingAndBuildingStreams
         Stream<String> stream = builder.build();
         stream.forEach(System.out::print);
         System.out.println();
+
+        
     }
 }
